@@ -52,7 +52,7 @@ export default function Question({
     }
 
     return (
-        <session id='question'>
+        <div id='question'>
         <QuestionTimer
         timeout={timer} 
         onTimeout={answer.selectedAnswer === '' ? onSkipAnswer : null}/>
@@ -64,6 +64,6 @@ export default function Question({
         answerState={answerState}
         onSelect={handleSelectAnswer}
         />
-    </session>
+    </div>
     )
 }

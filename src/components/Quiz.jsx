@@ -27,13 +27,13 @@ export default function Quiz() {
     }
 
     return (
-        <article id="quiz">
+        <div id="quiz">
            <Question
            key={activeQuestionIndex} //esta key serve para destruir e remontar o componente quando muda, o que permite o timer ser resetado.
            index={activeQuestionIndex}
            onSelectAnswer={handleSelectAnswer}
            onSkipAnswer={handleSkipAnswer}
            />
-        </article>
+        </div>
     )
 }
